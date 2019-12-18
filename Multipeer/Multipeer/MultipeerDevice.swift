@@ -36,6 +36,7 @@ class MultipeerDevice: NSObject {
     func disconnect() {
         logger?.log(message: "☠️ DISCONNECT: \(peerID.displayName)")
         state.send(.notConnected)
+        isVisible.send(false)
         session?.disconnect()
         session?.delegate = nil
         session = nil

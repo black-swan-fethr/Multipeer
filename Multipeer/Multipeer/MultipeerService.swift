@@ -130,6 +130,7 @@ extension MultipeerService: MCNearbyServiceBrowserDelegate {
     func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
         logger?.log(message: "🔎🥺 Lost: \(peerID.displayName)")
         device(for: peerID).isVisible.send(false)
+        device(for: peerID).disconnect()
     }
 
     func browser(_ browser: MCNearbyServiceBrowser, didNotStartBrowsingForPeers error: Error) {
