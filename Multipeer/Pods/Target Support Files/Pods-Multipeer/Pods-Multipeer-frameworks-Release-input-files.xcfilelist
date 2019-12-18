@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Multipeer/Pods-Multipeer-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Bond/Bond.framework
+${BUILT_PRODUCTS_DIR}/Differ/Differ.framework
+${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
